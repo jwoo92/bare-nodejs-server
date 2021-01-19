@@ -1,0 +1,15 @@
+__tests__
+.babel-cache
+.vscode
+build
+coverage
+dist
+node_modules
+package-lock.json
+_refactor
+cache.js
+refactor-utils.js
+test/
+jest-global-setup.js
+redis.js
+src/utils/validation/validation.js

@@ -1,0 +1,25 @@
+schema {
+  query: Query
+  mutation: Mutation
+}
+
+type Query {
+  ping: String # Should always return a string with value "pong"
+  numberSix: Int! # Should always return the number 6 when queried
+  numberSeven: Int! # Should always return 7
+  user(id: ID!): User
+  randomDog: RandomDog
+}
+
+type Mutation {
+  _: String # This is just a place holder - do not touch
+}
+
+type User {
+  id: Int!
+  name: String
+}
+
+type RandomDog {
+  url: String
+}
